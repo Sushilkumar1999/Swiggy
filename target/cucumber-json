@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-09T04:27:42.144Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1357552509,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Swiggy_login.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Positive scenario to test login functinonality",
+        "description": "",
+        "id": "login-into-swiggy-website;positive-scenario-to-test-login-functinonality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 37977,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Swiggy_login.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2592503127,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has opened swiggy website on chrome browser",
+            "match": {
+              "location": "Swiggy_login.user_has_opened_swiggy_website_on_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotVisibleException: element not visible\n  (Session info: chrome\u003d83.0.4103.97)\n  (Driver info: chromedriver\u003d2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform\u003dLinux 4.4.0-1122-aws x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 22 milliseconds\nBuild info: version: \u00272.47.1\u0027, revision: \u0027unknown\u0027, time: \u00272015-07-30 11:02:44\u0027\nSystem info: host: \u0027ip-172-31-4-59\u0027, ip: \u0027172.31.4.59\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-1122-aws\u0027, java.version: \u00271.8.0_282\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dLINUX, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:37262}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706), userDataDir\u003d/tmp/.org.chromium.Chromium.VlswDF}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d83.0.4103.97, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 306fa8393b0167dbcc8147768fd8071b\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat test.Swiggy_login.user_enters_correct_something(Swiggy_login.java:54)\n\tat ✽.User enters correct \"7978683811\"(file:src/test/java/test/Swiggy.feature:5)\n",
+              "duration": 252026181,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User enters correct \"7978683811\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7978683811",
+                  "offset": 21
+                }
+              ],
+              "location": "Swiggy_login.user_enters_correct_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 451433,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user should be able to login successfully",
+            "match": {
+              "location": "Swiggy_login.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login into swiggy website",
+    "description": "",
+    "id": "login-into-swiggy-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/test/Swiggy.feature",
+    "tags": []
+  }
+]
